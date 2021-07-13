@@ -1,0 +1,56 @@
+/* fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* common styles and utilities */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* banner section styles */
+header{
+    /* Width: 1440px;
+    Height: 677px; */
+    background: #2D25A0;
+}
+.banner{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+}
+.banner-info{
+
+}
+.banner-heading{
+    width: 485px;
+    height: 230px;
+    font-size: 64px;
+    line-height: 80px;
+    color: #FFFFFF;
+}
+.link-open{
+    font-size: 16px;
+    line-height: 24px;
+    background: #E02C6D;
+    text-decoration: none;
+    padding: 10px 24px;
+    color: #FFFFFF;
+}
+.banner .banner-info a:hover{
+    background: #FFFFFF;
+    color:#E02C6D;
+    transition: 1s ease-in-out;
+}
+.banner-image img{
+    margin-top: 100px;
+    margin-bottom: 50px;
+    width: 556.01px;
+    height: 438px;
+}
+.banner-image img:hover{
+    transform: scale(1.2);
+    transition: transform 1s ease-in-out;
+}
+
+/* .photo-frame:hover .photo {
+    transform: scale(1.5) skew(-30deg);
+    transition: transform 2s ease-in-out;
+} */
