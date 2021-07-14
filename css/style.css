@@ -8,17 +8,12 @@ body{
 }
 /* banner section styles */
 header{
-    /* Width: 1440px;
-    Height: 677px; */
     background: #2D25A0;
 }
 .banner{
  display: flex;
  justify-content: space-evenly;
  align-items: center;
-}
-.banner-info{
-
 }
 .banner-heading{
     width: 485px;
@@ -64,7 +59,6 @@ header{
     grid-gap: 30px;
     grid-row-gap: 27px;
 }
-
 .player{
     padding: 15px;
     width: 330px;
@@ -87,7 +81,6 @@ header{
     font-size: 16px;
     color: #6C6C6C;
     margin: 10px 10px;
-
 }
 
 /* footer section start  */
@@ -99,16 +92,10 @@ footer{
     align-items: center;
     padding: 0px;
 }
-.logo{
-
-}
 .logo img{
     margin: 20px 0px;
     width: 483.87px;
     height: 110px;
-}
-.social-media{
-
 }
 .fab{
     Width: 32px;
@@ -121,4 +108,73 @@ footer{
     line-height: 24px;
     color: #000000;
     margin: 20px 0px;
+}
+
+/* Extra small devices (portrait phones, less than 688px)*/
+@media only screen and (max-width: 688px) { 
+    .banner{
+        justify-content: center;
+        flex-direction: column;
+       }
+    .banner-heading{
+        margin-top: 100px;
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .link-open{
+        width: 168px;
+        height: 44px;
+    }
+    .banner-image img{
+        margin-top: 50px;
+        margin-bottom: 60px;
+        width: 330px;
+        height: 260px;
+    }
+    .star-players{
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .player {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo img{
+        width: 150px;
+        height: 65px;
+    }
+  }
+
+/*Medium devices (tablets, 688px and up)*/
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+    .banner-info{
+        margin-bottom: 40px;
+    }
+    .banner-heading{
+        margin-top: 100px;
+        width: 278px;
+        height: 138px;
+        font-size: 36px;
+        line-height: 50px;
+    }
+    .link-open{
+        width: 168px;
+        height: 44px;
+    }
+    .banner-image img{
+        margin-top: 60px;
+        margin-bottom: 40px;
+        width: 330px;
+        height: 260px;
+    }
+      .star-players {
+        grid-template-columns: repeat(2, 1fr);
+      }
+  
+}
+/*Extra extra large devices (large desktops, 1400px and up)*/
+@media only screen and (min-width: 992px) {
+
 }
