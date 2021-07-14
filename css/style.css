@@ -53,7 +53,7 @@ header{
     align-items: center;
     margin-top: 70px;
 }   
-.star-players{
+.star-players, .partner-image{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
@@ -82,20 +82,40 @@ header{
     color: #6C6C6C;
     margin: 10px 10px;
 }
-
-/* footer section start  */
+/* gallery and sponsorship section styles */
+.media-header{
+    font-size: 36px;
+    text-align: center;
+}
+.vedio-gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+}
+hr{
+    margin-top: 70px;
+    border: 1px solid #d1d1d1;
+}
+.partner-link{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* footer section styles  */
 footer{
     margin-top: 70px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
 }
 .logo img{
     margin: 20px 0px;
     width: 483.87px;
     height: 110px;
+}
+.social-media{
+    margin-left: 10px;
 }
 .fab{
     Width: 32px;
@@ -110,8 +130,13 @@ footer{
     margin: 20px 0px;
 }
 
+/* -------------Media Queries Styles------------
+-----Mobile,tablet and large screen styles------*/
+
+
 /* Extra small devices (portrait phones, less than 688px)*/
 @media only screen and (max-width: 688px) { 
+     /* banner section styles */
     .banner{
         justify-content: center;
         flex-direction: column;
@@ -133,7 +158,8 @@ footer{
         width: 330px;
         height: 260px;
     }
-    .star-players{
+    /* star players section style  */
+    .star-players, .vedio-gallery{
         grid-template-columns: repeat(1, 1fr);
       }
       .player {
@@ -141,6 +167,15 @@ footer{
         justify-content: center;
         align-items: center;
       }
+     /* gallery and sponsorship section styles */
+      .media-header{
+        font-size: 28px;
+        text-align: center;
+    }
+    .partner-image{
+        grid-template-columns: repeat(2, 1fr);
+    }
+      /* footer section styles  */
       .logo img{
         width: 150px;
         height: 65px;
@@ -149,6 +184,7 @@ footer{
 
 /*Medium devices (tablets, 688px and up)*/
 @media only screen and (min-width: 688px) and (max-width: 992px) {
+    /* banner section styles */
     .banner-info{
         margin-bottom: 40px;
     }
@@ -169,10 +205,14 @@ footer{
         width: 330px;
         height: 260px;
     }
-      .star-players {
+    /* star players section style  */
+      .star-players, .partner-image {
         grid-template-columns: repeat(2, 1fr);
       }
-  
+    /* gallery and sponsorship section styles */
+      .vedio-gallery{
+        grid-template-columns: repeat(1, 1fr);
+      }
 }
 /*Extra extra large devices (large desktops, 1400px and up)*/
 @media only screen and (min-width: 992px) {
