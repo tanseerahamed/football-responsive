@@ -169,8 +169,13 @@ footer{
       }
      /* gallery and sponsorship section styles */
       .media-header{
-        font-size: 28px;
+        font-size: 24px;
         text-align: center;
+    }
+    .partner-link{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
     }
     .partner-image{
         grid-template-columns: repeat(2, 1fr);
@@ -206,13 +211,18 @@ footer{
         height: 260px;
     }
     /* star players section style  */
-      .star-players, .partner-image {
+      .star-players{
         grid-template-columns: repeat(2, 1fr);
       }
     /* gallery and sponsorship section styles */
-      .vedio-gallery{
-        grid-template-columns: repeat(1, 1fr);
+    .vedio-gallery{
+        grid-template-columns: repeat(2, 1fr);
       }
+      .partner-link{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 /*Extra extra large devices (large desktops, 1400px and up)*/
 @media only screen and (min-width: 992px) {
